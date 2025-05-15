@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Tags -->
+  <title>Cole Feuer | NYC Traffic Detector – Real‑Time Traffic Sign &amp; Signal Detection</title>
+  <meta name="description" content="Cole Feuer’s NYC Traffic Detector: a real‑time deep learning pipeline for traffic sign, light, and vehicle detection in urban video streams. GitHub: CDFire/TrafficDetector." />
+  <meta name="keywords" content="Cole Feuer, Traffic Detector, NYC Traffic, YOLO, OpenCV, Deep Learning, Real‑Time Detection, Computer Vision" />
+  <meta name="author" content="Cole Feuer" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cdfire.github.io/TrafficDetector/" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:site_name" content="Cole Feuer Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cole Feuer | NYC Traffic Detector" />
+  <meta property="og:description" content="A real‑time traffic detection system by Cole Feuer using deep learning to identify signs, lights, and vehicles in New York City video feeds." />
+  <meta property="og:url" content="https://cdfire.github.io/TrafficDetector/" />
+
+  <!-- BreadcrumbList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.linkedin.com/in/cole-feuer-6a4551165/" },
+      { "@type": "ListItem", "position": 2, "name": "NYC Traffic Detector", "item": "https://cdfire.github.io/TrafficDetector/" }
+    ]
+  }
+  </script>
+
+  <!-- Person & SoftwareApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#coleFeuer",
+        "name": "Cole Feuer",
+        "url": "https://linkedin.com/in/cole-feuer-6a4551165/",
+        "sameAs": [
+          "https://github.com/CDFire/TrafficDetector",
+          "https://linkedin.com/in/cole-feuer-6a4551165/"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "NYC Traffic Detector",
+        "applicationCategory": "DeveloperTool",
+        "operatingSystem": "Cross-platform",
+        "url": "https://cdfire.github.io/TrafficDetector/",
+        "description": "Real‑time traffic sign, light, and vehicle detection in video streams powered by YOLO and OpenCV.",
+        "author": { "@id": "#coleFeuer" },
+        "codeRepository": "https://github.com/CDFire/TrafficDetector",
+        "keywords": ["Traffic Detection","YOLO","OpenCV","Deep Learning","Cole Feuer","NYC"],
+        "datePublished": "2025-05-14"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; margin:0; padding:1rem; max-width:960px; background:#f9f9f9; color:#212121; line-height:1.6; }
+    nav.breadcrumb { font-size:.9rem; margin-bottom:1rem; }
+    nav.breadcrumb a { color:#0066cc; text-decoration:none; }
+    header h1 { font-size:2.5rem; margin:0; color:#004080; }
+    header p.lead { font-size:1.1rem; color:#555; }
+    section { margin-top:2rem; }
+    h2 { font-size:1.8rem; color:#333; border-bottom:2px solid #e0e0e0; padding-bottom:.3rem; }
+    .gallery img { max-width:100%; border-radius:6px; margin:1rem 0; }
+    .button { display:inline-block; padding:.6rem 1.2rem; margin-top:1rem; background:#004080; color:#fff; text-decoration:none; border-radius:4px; }
+    footer { margin-top:3rem; font-size:.9rem; color:#555; border-top:1px solid #e0e0e0; padding-top:1rem; }
+  </style>
+</head>
+<body>
+  <nav class="breadcrumb">
+    <a href="https://colefeuer.com/">Home</a> &raquo;
+    <a href="https://colefeuer.com/projects/">Projects</a> &raquo;
+    <span>NYC Traffic Detector</span>
+  </nav>
+
+  <header>
+    <h1>NYC Traffic Detector by Cole Feuer</h1>
+    <p class="lead">Real‑time detection of traffic signs, signals, and vehicles in urban video streams using deep learning.</p>
+    <a href="https://github.com/CDFire/TrafficDetector" class="button" target="_blank" rel="noopener">View Code on GitHub</a>
+  </header>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p><strong>Cole Feuer</strong> developed the NYC Traffic Detector to automatically identify and classify traffic infrastructure—such as stop signs, traffic lights, and vehicles—in real‑time video feeds. Leveraging a YOLOv5 model fine‑tuned on NYC traffic datasets and OpenCV for video processing, this tool aims to support smart city analytics and autonomous navigation research.</p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Real‑time inference at 30+ FPS on commodity GPUs</li>
+      <li>Detects and classifies traffic signs, signals, and vehicle types</li>
+      <li>Built with PyTorch, YOLOv5, and OpenCV for efficient video handling</li>
+      <li>Modular pipeline: easy to retrain on custom datasets</li>
+      <li>Dockerized for seamless deployment on edge devices</li>
+    </ul>
+  </section>
+
+  <section id="installation">
+    <h2>Installation &amp; Usage</h2>
+    <ol>
+      <li>Clone the repository:<br><code>git clone https://github.com/CDFire/TrafficDetector.git</code></li>
+      <li>Install dependencies:<br><code>pip install -r requirements.txt</code></li>
+      <li>Download pre-trained weights:<br><code>bash scripts/download_weights.sh</code></li>
+      <li>Run detection on video:<br><code>python detect.py --source path/to/video.mp4</code></li>
+    </ol>
+  </section>
+
+  <section id="demo">
+    <h2>Results Gallery</h2>
+    <div class="gallery">
+      <img src="images/traffic_before.png" alt="Raw NYC video frame" />
+      <img src="images/traffic_after.png" alt="Detected traffic signs and vehicles overlay" />
+      <p>Figure: Example of detection overlay (left: input frame; right: model output).</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact &amp; Connect</h2>
+    <p>For questions, feedback, or collaboration, reach out to <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/cole-feuer-6a4551165/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Cole Feuer. All rights reserved.</p>
+  </footer>
+</body>
+</html>
