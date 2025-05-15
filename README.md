@@ -1,3 +1,18 @@
+# Urban Traffic Anomaly Detector
+
+**A Python-based system for identifying unusual traffic patterns in urban environments using simulated data and optional real road network integration. This tool employs statistical and machine learning techniques to detect anomalies and visualizes them on graphs and interactive maps.**
+
+## Project Overview
+
+This project implements an Urban Traffic Anomaly Detector designed to identify unusual traffic patterns from simulated traffic speed data. A key feature is its ability to integrate with actual road network geometry (e.g., NYC LION street centerline data), allowing anomalies to be associated with specific, real-world street segments. If road network data is unavailable, the system can fall back to simulating anomalies on randomly generated geographic points.
+
+The system employs two primary anomaly detection techniques:
+1.  **STL Decomposition (Seasonal and Trend decomposition using Loess):** Identifies deviations from established seasonal traffic patterns.
+2.  **Isolation Forest:** An unsupervised machine learning algorithm effective for outlier detection based on multiple features (speed, hour of day, day of week).
+
+Detected anomalies are visualized through:
+*   Time series plots for individual road links, showing speed variations and highlighted anomalies.
+*   An interactive geographical map displaying the locations of detected anomalies.
 
 ## Setup and Installation
 
